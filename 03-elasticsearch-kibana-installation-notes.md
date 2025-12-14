@@ -22,7 +22,7 @@ cd /home/hduser/install/
 ```bash
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.1-linux-x86_64.tar.gz
 
-wget https://artifacts.elastic.co/downloads/kibana/kibana-7.2.1-linuxx86_64.tar.gz
+wget https://artifacts.elastic.co/downloads/kibana/kibana-7.2.1-linux-x86_64.tar.gz
 
 wget https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-hadoop-hive/7.2.1/elasticsearch-hadoop-hive-7.2.1.jar
 ```
@@ -31,13 +31,13 @@ wget https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-hadoop-hive/
 
 ```bash
 tar xvzf elasticsearch-7.2.1-linux-x86_64.tar.gz
-tar xvzf kibana-7.2.1-linuxx86_64.tar.gz
+tar xvzf kibana-7.2.1-linux-x86_64.tar.gz
 ```
 
 ### 📁 Move Kibana to Standard Location
 
 ```bash
-sudo mv kibana-7.2.1-linuxx86_64 /usr/local/kibana
+sudo mv kibana-7.2.1-linux-x86_64 /usr/local/kibana
 ```
 
 ---
@@ -47,13 +47,15 @@ sudo mv kibana-7.2.1-linuxx86_64 /usr/local/kibana
 ### ▶️ Start Elasticsearch (Background Mode)
 
 ```bash
-nohup /usr/local/elasticsearch/bin/elasticsearch &
+cd /home/hduser/install/elasticsearch-7.2.1/bin
+nohup ./elasticsearch &
 ```
 
 ### ▶️ Start Kibana
 
 ```bash
-/usr/local/kibana/bin/kibana
+cd /home/hduser/install/kibana-7.2.1-linux-x86_64/bin
+nohup ./kibana &
 ```
 
 📌 **Access URLs**
