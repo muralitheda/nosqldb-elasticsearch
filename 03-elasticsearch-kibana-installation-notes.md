@@ -20,42 +20,16 @@ cd /home/hduser/install/
 ### ⬇️ Download Required Packages
 
 ```bash
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.1-linux-x86_64.tar.gz
-
-wget https://artifacts.elastic.co/downloads/kibana/kibana-7.2.1-linux-x86_64.tar.gz
-
-wget https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-hadoop-hive/7.2.1/elasticsearch-hadoop-hive-7.2.1.jar
-```
-
-### 📦 Extract the Archives
-
-```bash
-tar xvzf elasticsearch-7.2.1-linux-x86_64.tar.gz
-tar xvzf kibana-7.2.1-linux-x86_64.tar.gz
-```
-
-### 📁 Move Kibana to Standard Location
-
-```bash
-sudo mv kibana-7.2.1-linux-x86_64 /usr/local/kibana
-```
-
----
-
-## 2️⃣ Start Elasticsearch and Kibana Services
-
-### ▶️ Start Elasticsearch (Background Mode)
-
-```bash
-cd /home/hduser/install/elasticsearch-7.2.1/bin
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.18-linux-aarch64.tar.gz
+tar xvzf elasticsearch-7.17.18-linux-aarch64.tar.gz
+cd /home/hduser/install/elasticsearch-7.17.18/bin
 nohup ./elasticsearch &
-```
 
-### ▶️ Start Kibana
-
-```bash
-cd /home/hduser/install/kibana-7.2.1-linux-x86_64/bin
+wget https://artifacts.elastic.co/downloads/kibana/kibana-7.17.18-linux-aarch64.tar.gz
+tar xvzf kibana-7.17.18-linux-aarch64.tar.gz
+cd /home/hduser/install/kibana-7.17.18-linux/bin
 nohup ./kibana &
+
 ```
 
 📌 **Access URLs**
