@@ -279,7 +279,7 @@ Elasticsearch returns results with a **score**.
 
 ---
 
-## 🎯 Teaching Flow Recommendation
+## 🎯 Points
 
 1. Problem with traditional databases
 2. What is Elasticsearch
