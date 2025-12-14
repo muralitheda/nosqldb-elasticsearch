@@ -20,6 +20,9 @@ cd /home/hduser/install/
 ### ⬇️ Download Required Packages
 
 ```bash
+
+wget https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-hadoop-hive/7.2.1/elasticsearch-hadoop-hive-7.2.1.jar
+
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.18-linux-aarch64.tar.gz
 tar xvzf elasticsearch-7.17.18-linux-aarch64.tar.gz
 cd /home/hduser/install/elasticsearch-7.17.18/bin
